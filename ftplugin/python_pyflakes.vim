@@ -35,7 +35,7 @@ if !exists("*Pyflakes()")
         " perform the grep itself
         let &grepformat="%f:%l: %m"
         let &grepprg=s:pyflakes_cmd
-        silent! grep! %
+        silent! grep! "%"
 
         " restore grep settings
         let &grepformat=l:old_gfm
